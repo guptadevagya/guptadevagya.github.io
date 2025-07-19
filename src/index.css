@@ -1,12 +1,9 @@
-/* src/index.css */
 body {
   margin: 0;
   font-family: 'Press Start 2P', system-ui;
-  background-color: #212529; /* a dark background */
+  background-color: #212529;
 }
 
 .home {
   min-height: 100vh;
-  /* add your background image here if you have one */
-  /* background-image: url('/path/to/your/image.png'); */
 }

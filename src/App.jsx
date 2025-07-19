@@ -1,11 +1,10 @@
-// src/App.jsx
 import React from 'react';
-import Navbar from './components/Navbar'; // <-- Capital 'N'
-import Home from './components/Home';     // <-- Capital 'H'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div> {/* Use a simple div, not a class 'background' unless you define it in CSS */}
+    <div> {}
       <Navbar />
       <main>
         <section id="home">
