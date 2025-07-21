@@ -1,5 +1,3 @@
-import React from 'react';
-
 function About() {
   // This content should be updated with your information
   return (

@@ -52,54 +52,62 @@ function Skills() {
   return (
     <section id="skills" className="container text-center">
       <h3 className="text-center text-white my-5">Skills</h3>
-      <div className="d-flex justify-content-center flex-wrap">
-        
-        <div className="nes-container is-dark with-title m-2" style={{ flex: '1 1 250px' }}>
-          <p className="title">Languages</p>
-          <ul className="nes-list is-circle text-start">
-            {coreLanguages.map(skill => (
-              <li key={skill.name} style={skillItemStyle}>
-                <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
-                <span className="text-white">{skill.name}</span>
-              </li>
-            ))}
-          </ul>
+      <div className="row justify-content-center">
+
+        <div className="col-lg-6 mb-4">
+          <div className="nes-container is-dark with-title h-100">
+            <p className="title">Core Languages</p>
+            <ul className="nes-list is-circle text-start">
+              {coreLanguages.map(skill => (
+                <li key={skill.name} style={skillItemStyle}>
+                  <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
+                  <span className="text-white">{skill.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         
-        <div className="nes-container is-dark with-title m-2" style={{ flex: '1 1 250px' }}>
-          <p className="title">Web & UI</p>
-          <ul className="nes-list is-circle text-start">
-            {webTech.map(skill => (
-              <li key={skill.name} style={skillItemStyle}>
-                <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
-                <span className="text-white">{skill.name}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="col-lg-6 mb-4">
+          <div className="nes-container is-dark with-title h-100">
+            <p className="title">Web & UI Tech</p>
+            <ul className="nes-list is-circle text-start">
+              {webTech.map(skill => (
+                <li key={skill.name} style={skillItemStyle}>
+                  <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
+                  <span className="text-white">{skill.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <div className="nes-container is-dark with-title m-2" style={{ flex: '1 1 250px' }}>
-          <p className="title">Data Science</p>
-          <ul className="nes-list is-circle text-start">
-            {dataScience.map(skill => (
-              <li key={skill.name} style={skillItemStyle}>
-                <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
-                <span className="text-white">{skill.name}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="col-lg-6 mb-4">
+          <div className="nes-container is-dark with-title h-100">
+            <p className="title">Data Science & ML</p>
+            <ul className="nes-list is-circle text-start">
+              {dataScience.map(skill => (
+                <li key={skill.name} style={skillItemStyle}>
+                  <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
+                  <span className="text-white">{skill.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <div className="nes-container is-dark with-title m-2" style={{ flex: '1 1 250px' }}>
-          <p className="title">DevOps</p>
-          <ul className="nes-list is-disc text-start">
-            {devOpsTools.map(skill => (
-              <li key={skill.name} style={skillItemStyle}>
-                <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
-                <span className="text-white">{skill.name}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="col-lg-6 mb-4">
+          <div className="nes-container is-dark with-title h-100">
+            <p className="title">DevOps & Tools</p>
+            <ul className="nes-list is-disc text-start">
+              {devOpsTools.map(skill => (
+                <li key={skill.name} style={skillItemStyle}>
+                  <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
+                  <span className="text-white">{skill.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
       </div>

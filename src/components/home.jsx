@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Home() {
   return (
     <section id="home" className="container-fluid text-center">
@@ -15,7 +13,7 @@ function Home() {
             <i className="nes-icon github is-medium"></i>
           </a>
         </div>
-        <a className="nes-btn is-warning" href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a className="nes-btn is-warning" href="/assets/Devagya_Gupta_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
     </section>
   );
