@@ -25,7 +25,11 @@ section {
   background-color: transparent;
 }
 
-/* this adds a specific override to re-center ONLY the home section */
 #home {
   justify-content: center;
+}
+
+/* Add this to remove extra top padding from other sections */
+section:not(#home) {
+  padding-top: 0;
 }
