@@ -55,7 +55,7 @@ function Skills() {
       <div className="d-flex justify-content-center flex-wrap">
         
         <div className="nes-container is-dark with-title m-2" style={{ flex: '1 1 250px' }}>
-          <p className="title">Core Languages</p>
+          <p className="title">Languages</p>
           <ul className="nes-list is-circle text-start">
             {coreLanguages.map(skill => (
               <li key={skill.name} style={skillItemStyle}>
@@ -67,7 +67,7 @@ function Skills() {
         </div>
         
         <div className="nes-container is-dark with-title m-2" style={{ flex: '1 1 250px' }}>
-          <p className="title">Web & UI Tech</p>
+          <p className="title">Web & UI</p>
           <ul className="nes-list is-circle text-start">
             {webTech.map(skill => (
               <li key={skill.name} style={skillItemStyle}>
@@ -79,7 +79,7 @@ function Skills() {
         </div>
 
         <div className="nes-container is-dark with-title m-2" style={{ flex: '1 1 250px' }}>
-          <p className="title">Data Science & ML</p>
+          <p className="title">Data Science</p>
           <ul className="nes-list is-circle text-start">
             {dataScience.map(skill => (
               <li key={skill.name} style={skillItemStyle}>
@@ -91,7 +91,7 @@ function Skills() {
         </div>
 
         <div className="nes-container is-dark with-title m-2" style={{ flex: '1 1 250px' }}>
-          <p className="title">DevOps & Tools</p>
+          <p className="title">DevOps</p>
           <ul className="nes-list is-disc text-start">
             {devOpsTools.map(skill => (
               <li key={skill.name} style={skillItemStyle}>

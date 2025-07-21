@@ -5,11 +5,13 @@ html {
 body {
   margin: 0;
   font-family: 'Press Start 2P', system-ui;
-  background-image: url('/assets/animated.gif');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/assets/animated.gif');
+
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #212529;
+  background-color: #212529; /* fallback color */
 }
 
 section {
@@ -20,5 +22,5 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
 }
