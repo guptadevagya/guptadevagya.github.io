@@ -1,29 +1,29 @@
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
+
+// add these three lines to import swiper's core styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import styles from './FunStuff.module.css'; // We will create this file next
 
-// Import Swiper modules
+import styles from './FunStuff.module.css';
 import { Navigation, Pagination } from 'swiper/modules';
 
 function FunStuff() {
   useEffect(() => {
-    // Initialize Swiper when the component mounts
     new Swiper(`.${styles.card__content}`, {
       modules: [Navigation, Pagination],
       loop: true,
       spaceBetween: 32,
       grabCursor: true,
       pagination: {
-        el: `.${styles['swiper-pagination']}`,
+        el: '.swiper-pagination', // Use global class for pagination
         clickable: true,
         dynamicBullets: true,
       },
       navigation: {
-        nextEl: `.${styles['swiper-button-next']}`,
-        prevEl: `.${styles['swiper-button-prev']}`,
+        nextEl: '.swiper-button-next', // Use global class for navigation
+        prevEl: '.swiper-button-prev',
       },
       breakpoints:{
         600: { slidesPerView: 2 },
@@ -38,7 +38,6 @@ function FunStuff() {
       <div className={styles.card__container}>
         <div className={`${styles.card__content} swiper`}>
           <div className="swiper-wrapper">
-            {/* Slide 1 */}
             <article className={`${styles.card__article} swiper-slide`}>
               <div className={styles.card__image}>
                 <img src="/assets/fun-stuff/activity1.jpg" alt="Activity 1" className={styles.card__img} />
@@ -47,17 +46,24 @@ function FunStuff() {
               <div className={styles.card__data}>
                 <h3 className={styles.card__name}>Activity One</h3>
                 <p className={styles.card__description}>A short description of the fun activity I do.</p>
-                <a href="#" className={styles.card__button}>View More</a>
               </div>
             </article>
-            {/* Add more articles here for more slides */}
+            <article className={`${styles.card__article} swiper-slide`}>
+              <div className={styles.card__image}>
+                <img src="/assets/fun-stuff/activity2.jpg" alt="Activity 2" className={styles.card__img} />
+                <div className={styles.card__shadow}></div>
+              </div>
+              <div className={styles.card__data}>
+                <h3 className={styles.card__name}>Activity Two</h3>
+                <p className={styles.card__description}>This is another fun thing that I enjoy.</p>
+              </div>
+            </article>
           </div>
         </div>
         
-        {/* Navigation & Pagination */}
-        <div className={`${styles['swiper-button-next']} swiper-button-next`}></div>
-        <div className={`${styles['swiper-button-prev']} swiper-button-prev`}></div>
-        <div className={`${styles['swiper-pagination']} swiper-pagination`}></div>
+        <div className="swiper-button-next"></div>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-pagination"></div>
       </div>
     </section>
   );
