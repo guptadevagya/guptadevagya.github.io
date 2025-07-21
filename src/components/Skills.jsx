@@ -38,12 +38,12 @@ function Skills() {
 
   const skillItemStyle = {
     display: 'flex',
-    alignItems: 'right',
-    marginBottom: '0.5rem'
+    alignItems: 'center',
+    marginBottom: '1rem'
   };
 
   const iconStyle = {
-    marginRight: '0.5rem',
+    marginRight: '1rem',
     width: '24px',
     height: '24px',
     objectFit: 'contain'
@@ -52,10 +52,10 @@ function Skills() {
   return (
     <section id="skills" className="container text-center">
       <h3 className="text-center text-white my-5">Skills</h3>
-      <div className="container" style={{ maxWidth: '1200px' }}>
+      <div className="container" style={{ maxWidth: '1800px' }}>
         <div className="row justify-content-center">
 
-          <div className="col-md-3 mb-4">
+          <div className="col-md-4 mb-4">
             <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Languages</p>
               <ul className="nes-list is-circle text-start">
@@ -69,7 +69,7 @@ function Skills() {
             </div>
           </div>
           
-          <div className="col-md-3 mb-4">
+          <div className="col-md-4 mb-4">
             <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Front-end</p>
               <ul className="nes-list is-circle text-start">
@@ -83,7 +83,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-3 mb-4">
+          <div className="col-md-4 mb-4">
             <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Back-end</p>
               <ul className="nes-list is-circle text-start">
@@ -97,7 +97,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-3 mb-4">
+          <div className="col-md-4 mb-4">
             <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Productivity</p>
               <ul className="nes-list is-disc text-start">
