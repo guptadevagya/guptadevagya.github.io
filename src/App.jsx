@@ -10,6 +10,9 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
+      <video autoPlay loop muted className="background-video">
+        <source src="/assets/animated.mp4" type="video/mp4" />
+      </video>
       <Navbar />
       <main>
         <Home />

@@ -1,19 +1,31 @@
 body {
   margin: 0;
   font-family: 'Press Start 2P', system-ui;
-  background-image: url('/assets/animated.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #212529;
+  background-color: #212529; /* Fallback color */
+}
+
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
 section {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adds a slight dark overlay to make text more readable */
 }
