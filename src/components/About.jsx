@@ -1,13 +1,13 @@
-import React from 'react';
-
 function About() {
   return (
     <section id="about" className="container">
-      <h3 className="text-center text-white my-5">About Me</h3>
-      <div className="nes-container is-dark with-title" style={{ width: '100%', maxWidth: '900px' }}>
-        <p className="title">My Story</p>
-        <div className="text-white text-start">
-          <p>
+      <h2 className="text-center text-white my-5">About Me</h2>
+      <div className="row align-items-center">
+        <div className="col-md-4 text-center">
+          <img src="/assets/me.jpeg" alt="Devagya Gupta" className='img-fluid rounded-circle mb-3' style={{ maxWidth: '250px' }} />
+        </div>
+        <div className="col-md-8">
+         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
           </p>
           <p>

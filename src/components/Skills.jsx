@@ -56,7 +56,7 @@ function Skills() {
         <div className="row justify-content-center">
 
           <div className="col-md-3 mb-4">
-            <div className="nes-container is-dark with-title h-100">
+            <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Languages</p>
               <ul className="nes-list is-circle text-start">
                 {languages.map(skill => (
@@ -70,7 +70,7 @@ function Skills() {
           </div>
           
           <div className="col-md-3 mb-4">
-            <div className="nes-container is-dark with-title h-100">
+            <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Front-end</p>
               <ul className="nes-list is-circle text-start">
                 {frontend.map(skill => (
@@ -84,7 +84,7 @@ function Skills() {
           </div>
 
           <div className="col-md-3 mb-4">
-            <div className="nes-container is-dark with-title h-100">
+            <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Back-end</p>
               <ul className="nes-list is-circle text-start">
                 {backend.map(skill => (
@@ -98,7 +98,7 @@ function Skills() {
           </div>
 
           <div className="col-md-3 mb-4">
-            <div className="nes-container is-dark with-title h-100">
+            <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Productivity</p>
               <ul className="nes-list is-disc text-start">
                 {productivity.map(skill => (
