@@ -1,43 +1,63 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Swiper from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import styles from './FunStuff.module.css'; // We will create this file next
+
+// Import Swiper modules
+import { Navigation, Pagination } from 'swiper/modules';
 
 function FunStuff() {
+  useEffect(() => {
+    // Initialize Swiper when the component mounts
+    new Swiper(`.${styles.card__content}`, {
+      modules: [Navigation, Pagination],
+      loop: true,
+      spaceBetween: 32,
+      grabCursor: true,
+      pagination: {
+        el: `.${styles['swiper-pagination']}`,
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: `.${styles['swiper-button-next']}`,
+        prevEl: `.${styles['swiper-button-prev']}`,
+      },
+      breakpoints:{
+        600: { slidesPerView: 2 },
+        968: { slidesPerView: 3 },
+      },
+    });
+  }, []);
+
   return (
-    <section id="fun" className="container">
+    <section id="fun" className={styles.container}>
       <h3 className="text-center text-white my-5">Fun Stuff</h3>
-      <div className="d-flex justify-content-center">
-        <div id="funCarousel" className="carousel slide" data-bs-ride="carousel" style={{ maxWidth: '800px', width: '100%' }}>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src="/assets/fun-stuff/activity1.jpg" className="d-block w-100" alt="First activity" />
-              <div className="carousel-caption d-none d-md-block nes-container is-dark">
-                <h5>Activity One</h5>
-                <p>A short description of the fun activity I do.</p>
+      <div className={styles.card__container}>
+        <div className={`${styles.card__content} swiper`}>
+          <div className="swiper-wrapper">
+            {/* Slide 1 */}
+            <article className={`${styles.card__article} swiper-slide`}>
+              <div className={styles.card__image}>
+                <img src="/assets/fun-stuff/activity1.jpg" alt="Activity 1" className={styles.card__img} />
+                <div className={styles.card__shadow}></div>
               </div>
-            </div>
-            <div className="carousel-item">
-              <img src="/assets/fun-stuff/activity2.jpg" className="d-block w-100" alt="Second activity" />
-              <div className="carousel-caption d-none d-md-block nes-container is-dark">
-                <h5>Activity Two</h5>
-                <p>This is another fun thing that I enjoy.</p>
+              <div className={styles.card__data}>
+                <h3 className={styles.card__name}>Activity One</h3>
+                <p className={styles.card__description}>A short description of the fun activity I do.</p>
+                <a href="#" className={styles.card__button}>View More</a>
               </div>
-            </div>
-            <div className="carousel-item">
-              <img src="/assets/fun-stuff/activity3.jpg" className="d-block w-100" alt="Third activity" />
-              <div className="carousel-caption d-none d-md-block nes-container is-dark">
-                <h5>Activity Three</h5>
-                <p>And here is a third hobby or interest.</p>
-              </div>
-            </div>
+            </article>
+            {/* Add more articles here for more slides */}
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#funCarousel" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#funCarousel" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
+        
+        {/* Navigation & Pagination */}
+        <div className={`${styles['swiper-button-next']} swiper-button-next`}></div>
+        <div className={`${styles['swiper-button-prev']} swiper-button-prev`}></div>
+        <div className={`${styles['swiper-pagination']} swiper-pagination`}></div>
       </div>
     </section>
   );
