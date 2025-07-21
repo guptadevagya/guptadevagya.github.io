@@ -52,9 +52,11 @@ function FunStuff() {
         {funActivities.map((activity) => (
           <SwiperSlide key={activity.name} className={styles.card__article}>
             <div className={styles.card__image}>
+              {/* add loop={true} to this nested swiper */}
               <Swiper
                 modules={[Navigation]}
                 navigation
+                loop={true} 
                 className={styles.nested_swiper}
               >
                 {activity.images.map((image, imgIndex) => (
