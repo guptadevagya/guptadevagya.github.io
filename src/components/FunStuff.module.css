@@ -6,40 +6,53 @@
   min-height: 100vh;
 }
 
-.card__container {
-  padding-block: 5rem;
+.card__content {
   width: 100%;
   max-width: 1120px;
-}
-
-.card__content {
-  margin-inline: 1.75rem;
-  overflow: visible; /* Allow buttons to show */
+  padding-block: 5rem;
+  overflow: visible; /* Allows navigation buttons to be outside */
 }
 
 .card__article {
-  width: 350px !important; /* Increased card width */
-  height: 450px !important; /* Increased card height */
   border-radius: 1.25rem;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+}
+
+.card__image {
+  position: relative;
+  background-color: hsl(38, 100%, 78%);
+  padding-top: 1.5rem;
+  margin-bottom: -0.75rem;
 }
 
 .card__data {
   background-color: hsl(212, 42%, 20%);
   padding: 1.5rem 2rem;
-  border-bottom-left-radius: 1.25rem;
-  border-bottom-right-radius: 1.25rem;
+  border-radius: 1rem;
   text-align: center;
+  position: relative;
   z-index: 10;
-  flex-grow: 1; /* Make data section fill remaining space */
 }
 
 .card__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 200px; /* Standard height for all images */
+  object-fit: cover; /* This makes the image cover the area without distortion */
+  display: block;
+}
+
+.card__shadow {
+  width: 200px;
+  height: 200px;
+  background-color: hsl(32, 75%, 50%);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px);
+  z-index: -1;
 }
 
 .card__name {
@@ -54,30 +67,20 @@
   color: hsl(212, 4%, 95%);
 }
 
-/* Styles for the nested image gallery */
-.gallery_top {
-  height: 60%;
-  width: 100%;
-}
+/* --- Global Swiper Styles --- */
+/* These need to be global to override the library's default styles */
 
-:global(.swiper-button-next-nested),
-:global(.swiper-button-prev-nested) {
-  color: white;
-}
-
-/* Styles for the main slider controls */
-:global(.swiper-button-next-main),
-:global(.swiper-button-prev-main) {
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
   color: hsl(195, 75%, 52%);
 }
 
-:global(.swiper-pagination-main .swiper-pagination-bullet-active) {
+:global(.swiper-pagination-bullet-active) {
   background-color: hsl(195, 75%, 52%);
 }
 
-/* Breakpoints */
-@media screen and (min-width: 768px) {
-  .card__content {
-    margin-inline: 3rem;
-  }
+.nested_swiper :global(.swiper-button-prev),
+.nested_swiper :global(.swiper-button-next) {
+  color: white;
+  --swiper-navigation-size: 24px;
 }
