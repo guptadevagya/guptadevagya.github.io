@@ -1,12 +1,12 @@
-// src/components/Navbar.jsx
 import React from 'react';
 
 function Navbar() {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
+        {/* Replace the <i> tag with this <img> tag */}
         <a className="navbar-brand" href="#home">
-          <i className="nes-icon is-medium home"></i>
+          <img src="/assets/dev.png" alt="home icon" style={{ height: '40px' }} />
         </a>
         
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -17,7 +17,7 @@ function Navbar() {
             <li className="nav-item"><a className="nav-link" href="#about">About Me</a></li>
             <li className="nav-item"><a className="nav-link" href="#skills">Skills</a></li>
             <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
-            <li className="nav-item"><a className="nav-link" href="#fun">Fun Stuff</a></li>
+            <li className="nav-item"><a className="nav-link" href="#fun">Fun</a></li>
             <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>

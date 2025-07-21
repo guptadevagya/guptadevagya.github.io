@@ -1,5 +1,4 @@
 function About() {
-  // This content should be updated with your information
   return (
     <section id="about" className="container">
       <h2 className="text-center text-white my-5">About Me</h2>
