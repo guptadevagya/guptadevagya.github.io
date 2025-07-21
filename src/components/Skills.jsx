@@ -38,7 +38,7 @@ function Skills() {
 
   const skillItemStyle = {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'right',
     marginBottom: '1rem'
   };
 
