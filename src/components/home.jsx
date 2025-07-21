@@ -6,7 +6,8 @@ function Home() {
     <div className="container-fluid p-3 p-md-5 text-center d-flex align-items-center justify-content-center home">
       <div className="col-xl-auto mx-auto">
         <h1 className="display-3 fw-bold text-white">Devagya Gupta</h1>
-        <h3 className="fw-normal text-warning mb-3">Computer Science @ University of Wisconsin - Madison '26</h3>
+        <h3 className="fw-normal text-warning mb-3">Computer Science, Data Science, & Entrepreneurship</h3>
+        <h3 className="fw-normal text-warning mb-3">University of Wisconsin - Madison '26</h3>
         <div className='container d-flex justify-content-center mb-4'>
           <a className="nes-btn is-error mx-3" href="https://www.linkedin.com/in/devagyagupta/" target="_blank" rel="noopener noreferrer">
             <i className="nes-icon linkedin is-medium"></i>
