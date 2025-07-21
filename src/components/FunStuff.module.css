@@ -19,7 +19,7 @@
 }
 
 .card__article {
-  width: 300px !important; /* Added !important to ensure width */
+  width: 300px !important;
   border-radius: 1.25rem;
   overflow: hidden;
 }
@@ -29,6 +29,7 @@
   background-color: hsl(38, 100%, 78%);
   padding-top: 1.5rem;
   margin-bottom: -0.75rem;
+  overflow: hidden;
 }
 
 .card__data {
@@ -42,6 +43,9 @@
 
 .card__img {
   width: 180px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem; /* optional: to match the card's rounded corners */
   margin: 0 auto;
   position: relative;
   z-index: 5;
