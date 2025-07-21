@@ -13,7 +13,7 @@ function Skills() {
   const frontend = [
     { name: "HTML", icon: "/assets/skills-icons/html.png" },
     { name: "CSS", icon: "/assets/skills-icons/css.png" },
-    { name: "JavaScript", icon: "/assets/skills-icons/javascript.png" },
+    { name: "Javascript", icon: "/assets/skills-icons/javascript.png" },
     { name: "React", icon: "/assets/skills-icons/react.png" },
     { name: "Bootstrap", icon: "/assets/skills-icons/bootstrap.png" },
     { name: "SwiftUI", icon: "/assets/skills-icons/swiftui.png" },
@@ -55,7 +55,7 @@ function Skills() {
       <div className="container" style={{ maxWidth: '1200px' }}>
         <div className="row justify-content-center">
 
-          <div className="col-md-3.5 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Languages</p>
               <ul className="nes-list is-circle text-start">
@@ -69,7 +69,7 @@ function Skills() {
             </div>
           </div>
           
-          <div className="col-md-3.5 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Front-end</p>
               <ul className="nes-list is-circle text-start">
@@ -83,7 +83,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-3.5 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Back-end</p>
               <ul className="nes-list is-circle text-start">
@@ -97,7 +97,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-3.5 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100 d-flex flex-column">
               <p className="title text-center">Productivity</p>
               <ul className="nes-list is-disc text-start">
