@@ -39,11 +39,11 @@ function Skills() {
   const skillItemStyle = {
     display: 'flex',
     alignItems: 'right',
-    marginBottom: '1rem'
+    marginBottom: '0.5rem'
   };
 
   const iconStyle = {
-    marginRight: '1rem',
+    marginRight: '0.5rem',
     width: '24px',
     height: '24px',
     objectFit: 'contain'
