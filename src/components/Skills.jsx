@@ -54,7 +54,7 @@ function Skills() {
       <h3 className="text-center text-white my-5">Skills</h3>
       <div className="row justify-content-center">
 
-        <div className="col-lg-6 mb-4">
+        <div className="col-lg-3 mb-4">
           <div className="nes-container is-dark with-title h-100">
             <p className="title">Core Languages</p>
             <ul className="nes-list is-circle text-start">
@@ -68,7 +68,7 @@ function Skills() {
           </div>
         </div>
         
-        <div className="col-lg-6 mb-4">
+        <div className="col-lg-3 mb-4">
           <div className="nes-container is-dark with-title h-100">
             <p className="title">Web & UI Tech</p>
             <ul className="nes-list is-circle text-start">
@@ -82,7 +82,7 @@ function Skills() {
           </div>
         </div>
 
-        <div className="col-lg-6 mb-4">
+        <div className="col-lg-3 mb-4">
           <div className="nes-container is-dark with-title h-100">
             <p className="title">Data Science & ML</p>
             <ul className="nes-list is-circle text-start">
@@ -96,7 +96,7 @@ function Skills() {
           </div>
         </div>
 
-        <div className="col-lg-6 mb-4">
+        <div className="col-lg-3 mb-4">
           <div className="nes-container is-dark with-title h-100">
             <p className="title">DevOps & Tools</p>
             <ul className="nes-list is-disc text-start">
