@@ -1,3 +1,5 @@
+import React from 'react';
+
 function FunStuff() {
   return (
     <section id="fun" className="container">

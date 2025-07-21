@@ -57,7 +57,7 @@ function Skills() {
 
           <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100">
-              <p className="title">Languages</p>
+              <p className="title text-center">Languages</p>
               <ul className="nes-list is-circle text-start">
                 {languages.map(skill => (
                   <li key={skill.name} style={skillItemStyle}>
@@ -71,7 +71,7 @@ function Skills() {
           
           <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100">
-              <p className="title">Front-end</p>
+              <p className="title text-center">Front-end</p>
               <ul className="nes-list is-circle text-start">
                 {frontend.map(skill => (
                   <li key={skill.name} style={skillItemStyle}>
@@ -85,7 +85,7 @@ function Skills() {
 
           <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100">
-              <p className="title">Back-end</p>
+              <p className="title text-center">Back-end</p>
               <ul className="nes-list is-circle text-start">
                 {backend.map(skill => (
                   <li key={skill.name} style={skillItemStyle}>
@@ -99,7 +99,7 @@ function Skills() {
 
           <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100">
-              <p className="title">Productivity</p>
+              <p className="title text-center">Productivity</p>
               <ul className="nes-list is-disc text-start">
                 {productivity.map(skill => (
                   <li key={skill.name} style={skillItemStyle}>
