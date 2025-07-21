@@ -1,18 +1,24 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div> {}
+    <div>
       <Navbar />
       <main>
-        <section id="home">
-          <Home />
-        </section>
-
-        {/* ... other sections will go here ... */}
+        <Home />
+        <About />
+        <Skills />
+        <Resume />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
