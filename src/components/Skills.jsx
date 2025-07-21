@@ -7,13 +7,13 @@ function Skills() {
     { name: "C", icon: "/assets/skills-icons/c.png" },
     { name: "C++", icon: "/assets/skills-icons/c-plus-plus.png" },
     { name: "Kotlin", icon: "/assets/skills-icons/kotlin.png" },
-    { name: "Go", icon: "/assets/skills-icons/go.png" },
+    { name: "Go", icon: "/assets/skills-icons/golang.png" },
   ];
 
   const frontend = [
     { name: "HTML", icon: "/assets/skills-icons/html.png" },
-    { name: "CSS", icon: "/assets/skills-icons/css-3.png" },
-    { name: "JavaScript", icon: "/assets/skills-icons/js.png" },
+    { name: "CSS", icon: "/assets/skills-icons/css.png" },
+    { name: "JavaScript", icon: "/assets/skills-icons/javascript.png" },
     { name: "React", icon: "/assets/skills-icons/react.png" },
     { name: "Bootstrap", icon: "/assets/skills-icons/bootstrap.png" },
     { name: "SwiftUI", icon: "/assets/skills-icons/swiftui.png" },
@@ -22,7 +22,7 @@ function Skills() {
   const backend = [
     { name: "Node", icon: "/assets/skills-icons/node.png" },
     { name: "MySQL", icon: "/assets/skills-icons/mysql.png" },
-    { name: "MongoDB", icon: "/assets/skills-icons/mongo.png" },
+    { name: "MongoDB", icon: "/assets/skills-icons/mongodb.png" },
     { name: "Firebase", icon: "/assets/skills-icons/firebase.png" },
     { name: "PyTorch", icon: "/assets/skills-icons/pytorch.png" },
   ];
@@ -55,7 +55,7 @@ function Skills() {
       <div className="container" style={{ maxWidth: '1200px' }}>
         <div className="row justify-content-center">
 
-          <div className="col-md-2 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100">
               <p className="title">Languages</p>
               <ul className="nes-list is-circle text-start">
@@ -69,7 +69,7 @@ function Skills() {
             </div>
           </div>
           
-          <div className="col-md-2 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100">
               <p className="title">Front-end</p>
               <ul className="nes-list is-circle text-start">
@@ -83,7 +83,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-2 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100">
               <p className="title">Back-end</p>
               <ul className="nes-list is-circle text-start">
@@ -97,7 +97,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-2 mb-4">
+          <div className="col-md-3 mb-4">
             <div className="nes-container is-dark with-title h-100">
               <p className="title">Productivity</p>
               <ul className="nes-list is-disc text-start">
