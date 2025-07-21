@@ -6,7 +6,7 @@ function About() {
         <div className="col-md-4 text-center">
           <img src="/assets/me.jpeg" alt="Devagya Gupta" className='img-fluid rounded-circle mb-3' style={{ maxWidth: '250px' }} />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8 text-white">
          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
           </p>
