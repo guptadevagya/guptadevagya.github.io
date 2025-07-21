@@ -40,7 +40,7 @@ function FunStuff() {
           <div className="swiper-wrapper">
             <article className={`${styles.card__article} swiper-slide`}>
               <div className={styles.card__image}>
-                <img src="/assets/fun-stuff/activity1.jpg" alt="Activity 1" className={styles.card__img} />
+                <img src="/assets/fun-stuff/activity1.jpeg" alt="Activity 1" className={styles.card__img} />
                 <div className={styles.card__shadow}></div>
               </div>
               <div className={styles.card__data}>
@@ -50,7 +50,7 @@ function FunStuff() {
             </article>
             <article className={`${styles.card__article} swiper-slide`}>
               <div className={styles.card__image}>
-                <img src="/assets/fun-stuff/activity2.jpg" alt="Activity 2" className={styles.card__img} />
+                <img src="/assets/fun-stuff/activity2.jpeg" alt="Activity 2" className={styles.card__img} />
                 <div className={styles.card__shadow}></div>
               </div>
               <div className={styles.card__data}>
