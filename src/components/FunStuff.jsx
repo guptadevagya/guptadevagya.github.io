@@ -7,9 +7,9 @@ import { Navigation, Pagination } from 'swiper/modules';
 
 function FunStuff() {
   const funActivities = [
-    { name: 'Activity One', description: 'Boston: Summer \'25 with my Brother!', image: '/assets/fun-stuff/activity1/1.jpeg' },
-    { name: 'Activity Two', description: 'Certified PADI Open Water Diver!', image: '/assets/fun-stuff/activity2/1.jpeg' },
-    { name: 'Activity Three', description: 'And here is a third hobby or interest.', image: '/assets/fun-stuff/activity3/1.jpeg' },
+    { name: 'honorary local', description: 'went to boston with my fav people!', image: '/assets/fun-stuff/activity1/1.jpeg' },
+    { name: 'sir dives-alot', description: 'became a certified PADI open water diver!', image: '/assets/fun-stuff/activity2/1.jpeg' },
+    { name: 'absolute nail-biter fr', description: 'saw the nations league quarterfinals in spain!', image: '/assets/fun-stuff/activity3/1.jpeg' },
     { name: 'Activity Four', description: 'A short description of my hobby.', image: '/assets/fun-stuff/activity4/1.jpeg' },
     { name: 'Activity Five', description: 'This is another fun thing I enjoy.', image: '/assets/fun-stuff/activity5/1.jpeg' },
     { name: 'Activity Six', description: 'And here is a third hobby or interest.', image: '/assets/fun-stuff/activity6/1.jpeg' }
@@ -17,7 +17,7 @@ function FunStuff() {
 
   return (
     <section id="fun" className={styles.container}>
-      <h3 className="text-center text-white my-5">Fun Stuff</h3>
+      <h3 className="text-center text-white my-5">irl dlcs</h3>
       <Swiper
         modules={[Navigation, Pagination]}
         loop={false}
