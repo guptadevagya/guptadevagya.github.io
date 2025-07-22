@@ -1,33 +1,18 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-// Import your custom styles
 import styles from './FunStuff.module.css';
-
-// import required modules
 import { Navigation, Pagination } from 'swiper/modules';
 
 function FunStuff() {
   const funActivities = [
-    {
-      name: 'Activity One',
-      description: 'A short description of the fun activity I do.',
-      images: ['/assets/fun-stuff/activity1/1.jpeg', '/assets/fun-stuff/activity1/2.jpeg', '/assets/fun-stuff/activity1/3.jpeg']
-    },
-    {
-      name: 'Activity Two',
-      description: 'This is another fun thing that I enjoy.',
-      images: ['/assets/fun-stuff/activity2/1.jpeg', '/assets/fun-stuff/activity2/2.jpeg', '/assets/fun-stuff/activity2/3.jpeg']
-    },
-    {
-      name: 'Activity Three',
-      description: 'And here is a third hobby or interest.',
-      images: ['/assets/fun-stuff/activity3/1.jpeg', '/assets/fun-stuff/activity3/2.jpeg', '/assets/fun-stuff/activity3/3.jpeg']
-    }
+    { name: 'Activity One', description: 'Boston: Summer \'25 with my Brother!', image: '/assets/fun-stuff/activity1/1.jpeg' },
+    { name: 'Activity Two', description: 'Certified PADI Open Water Diver!', image: '/assets/fun-stuff/activity2/1.jpeg' },
+    { name: 'Activity Three', description: 'And here is a third hobby or interest.', image: '/assets/fun-stuff/activity3/1.jpeg' },
+    { name: 'Activity Four', description: 'A short description of my hobby.', image: '/assets/fun-stuff/activity4/1.jpeg' },
+    { name: 'Activity Five', description: 'This is another fun thing I enjoy.', image: '/assets/fun-stuff/activity5/1.jpeg' },
+    { name: 'Activity Six', description: 'And here is a third hobby or interest.', image: '/assets/fun-stuff/activity6/1.jpeg' }
   ];
 
   return (
@@ -35,36 +20,26 @@ function FunStuff() {
       <h3 className="text-center text-white my-5">Fun Stuff</h3>
       <Swiper
         modules={[Navigation, Pagination]}
-        loop={true}
-        spaceBetween={32}
+        loop={false}
+        spaceBetween={30} // Adjust space between cards
         grabCursor={true}
-        pagination={{
-          clickable: true,
-          dynamicBullets: true,
-        }}
+        pagination={{ clickable: true, dynamicBullets: true }}
         navigation={true}
+        // Responsive breakpoints
         breakpoints={{
-          600: { slidesPerView: 2 },
-          968: { slidesPerView: 3 },
+          // when window width is >= 320px
+          320: { slidesPerView: 1 },
+          // when window width is >= 768px
+          768: { slidesPerView: 2 },
+          // when window width is >= 1200px
+          1200: { slidesPerView: 3 },
         }}
         className={styles.card__content}
       >
-        {funActivities.map((activity) => (
-          <SwiperSlide key={activity.name} className={styles.card__article}>
+        {funActivities.map((activity, index) => (
+          <SwiperSlide key={index} className={styles.card__article}>
             <div className={styles.card__image}>
-              {/* add loop={true} to this nested swiper */}
-              <Swiper
-                modules={[Navigation]}
-                navigation
-                loop={true} 
-                className={styles.nested_swiper}
-              >
-                {activity.images.map((image, imgIndex) => (
-                  <SwiperSlide key={imgIndex}>
-                    <img src={image} alt={`${activity.name} ${imgIndex + 1}`} className={styles.card__img} />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+              <img src={activity.image} alt={activity.name} className={styles.card__img} />
               <div className={styles.card__shadow}></div>
             </div>
             <div className={styles.card__data}>

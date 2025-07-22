@@ -4,32 +4,21 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Press Start 2P', system-ui;
+  font-family: 'Press Start 2P', fantasy;
   background-image: url('/assets/animated.gif');
-
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #212529; /* fallback color */
+  background-color: #212529; /* Fallback color */
 }
 
-/* this sets the default for all sections to be top-aligned */
+/* this single rule will style and center every section */
 section {
-  padding-top: 5rem;
-  padding-bottom: 3rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: transparent;
-}
-
-#home {
   justify-content: center;
-}
-
-/* Add this to remove extra top padding from other sections */
-section:not(#home) {
-  padding-top: 0;
+  align-items: center;
+  padding: 5rem 1rem;
+  color: white;
 }

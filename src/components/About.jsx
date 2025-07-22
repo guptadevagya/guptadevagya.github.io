@@ -1,21 +1,14 @@
-import React from 'react';
+import Section from './Section';
 
 function About() {
   return (
-    <section id="about" className="container">
-      {/* This heading will now stay at the top of the section */}
-      <h2 className="text-center text-white my-5">About Me</h2>
-
-      {/* This new wrapper div makes the content below it centered */}
-      <div className="flex-grow-1 d-flex align-items-center justify-content-center w-100">
-
-        {/* Your original content now goes inside the wrapper */}
-        <div className="row align-items-center">
-          <div className="col-md-4 text-center">
-            <img src="/assets/me.jpeg" alt="Devagya Gupta" className='img-fluid rounded-circle mb-3' style={{ maxWidth: '250px' }} />
-          </div>
-          <div className="col-md-8 text-white">
-            <p>
+    <Section id="about" title="About Me">
+      <div className="row align-items-stretch" style={{ maxWidth: '900px' }}>
+        <div className="col-md-6 text-center">
+          <img src="/assets/me.jpeg" alt="Devagya Gupta" className='img-fluid h-100' style={{ objectFit: 'cover' }} />
+        </div>
+        <div className="col-md-6 text-white d-flex flex-column justify-content-center">
+          <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
             </p>
             <p>
@@ -27,11 +20,9 @@ function About() {
             <p>
               Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
             </p>
-          </div>
         </div>
-        
       </div>
-    </section>
+    </Section>
   );
 }
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Skills() {
   const languages = [
     { name: "Python", icon: "/assets/skills-icons/python.png" },
@@ -39,7 +37,8 @@ function Skills() {
   const skillItemStyle = {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '1rem'
+    marginBottom: '1rem',
+    fontSize: '1rem', // increased font size
   };
 
   const iconStyle = {
@@ -49,68 +48,34 @@ function Skills() {
     objectFit: 'contain'
   };
 
+  const skillCategories = [
+    { title: "Languages", skills: languages },
+    { title: "Front-end", skills: frontend },
+    { title: "Back-end", skills: backend },
+    { title: "Productivity", skills: productivity }
+  ];
+
   return (
-    <section id="skills" className="container text-center">
+    <section id="skills" className="container text-center" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
       <h3 className="text-center text-white my-5">Skills</h3>
-      <div className="container" style={{ maxWidth: '1800px' }}>
+      {/* increase the max-width to make the whole section wider */}
+      <div className="container" style={{ maxWidth: '1400px' }}>
         <div className="row justify-content-center">
-
-          <div className="col-md-4 mb-4">
-            <div className="nes-container is-dark with-title h-100 d-flex flex-column">
-              <p className="title text-center">Languages</p>
-              <ul className="nes-list is-circle text-start">
-                {languages.map(skill => (
-                  <li key={skill.name} style={skillItemStyle}>
-                    <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
-                    <span className="text-white">{skill.name}</span>
-                  </li>
-                ))}
-              </ul>
+          {skillCategories.map(category => (
+            <div key={category.title} className="col-lg-3 col-md-6 mb-4">
+              <div className="nes-container is-dark with-title h-100 d-flex flex-column">
+                <p className="title text-center">{category.title}</p>
+                <ul className="nes-list text-start" style={{ listStyleType: 'none', paddingLeft: '20px' }}>
+                  {category.skills.map(skill => (
+                    <li key={skill.name} style={skillItemStyle}>
+                      <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
+                      <span className="text-white">{skill.name}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-          
-          <div className="col-md-4 mb-4">
-            <div className="nes-container is-dark with-title h-100 d-flex flex-column">
-              <p className="title text-center">Front-end</p>
-              <ul className="nes-list is-circle text-start">
-                {frontend.map(skill => (
-                  <li key={skill.name} style={skillItemStyle}>
-                    <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
-                    <span className="text-white">{skill.name}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="col-md-4 mb-4">
-            <div className="nes-container is-dark with-title h-100 d-flex flex-column">
-              <p className="title text-center">Back-end</p>
-              <ul className="nes-list is-circle text-start">
-                {backend.map(skill => (
-                  <li key={skill.name} style={skillItemStyle}>
-                    <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
-                    <span className="text-white">{skill.name}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="col-md-4 mb-4">
-            <div className="nes-container is-dark with-title h-100 d-flex flex-column">
-              <p className="title text-center">Productivity</p>
-              <ul className="nes-list is-disc text-start">
-                {productivity.map(skill => (
-                  <li key={skill.name} style={skillItemStyle}>
-                    <img src={skill.icon} alt={`${skill.name} icon`} style={iconStyle} />
-                    <span className="text-white">{skill.name}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
+          ))}
         </div>
       </div>
     </section>

@@ -4,7 +4,6 @@ function Navbar() {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        {/* Replace the <i> tag with this <img> tag */}
         <a className="navbar-brand" href="#home">
           <img src="/assets/dev.png" alt="home icon" style={{ height: '40px' }} />
         </a>
