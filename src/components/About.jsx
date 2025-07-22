@@ -3,7 +3,7 @@ import Section from './Section';
 function About() {
   return (
     <Section id="about" title="About Me">
-      <div className="row align-items-stretch" style={{ maxWidth: '900px' }}>
+      <div className="row align-items-stretch" style={{ maxWidth: '1000px' }}>
         <div className="col-md-6 text-center">
           <img src="/assets/me.jpeg" alt="Devagya Gupta" className='img-fluid h-100' style={{ objectFit: 'cover' }} />
         </div>

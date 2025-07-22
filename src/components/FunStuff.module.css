@@ -14,34 +14,31 @@
 }
 
 .card__article {
-  /* remove fixed width and height */
-  aspect-ratio: 1 / 1; /* This makes the card a perfect square */
-  border-radius: 1.25rem;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  aspect-ratio: 1 / 1; /* keeps the whole card square */
 }
 
 .card__image {
+  flex: 1; /* grow to fill whatever vertical space is left */
   position: relative;
-  background-color: transparent;
-  flex-grow: 1;
   overflow: hidden;
-  /* Add border radius to the top corners */
   border-top-left-radius: 1.25rem;
   border-top-right-radius: 1.25rem;
 }
 
 .card__data {
+  /* instead of height: 150px; */
+  min-height: 100px; /* or whatever minimum you like */
+  padding: 1rem 1rem; /* less vertical padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* keeps text centered vertically */
+  align-items: center;
   background-color: hsl(212, 42%, 20%);
-  padding: 1rem 1.5rem;
-  /* Change this to only round the bottom corners */
   border-bottom-left-radius: 1.25rem;
   border-bottom-right-radius: 1.25rem;
   text-align: center;
-  position: relative;
-  z-index: 10;
-  height: 150px;
 }
 
 .card__img {
@@ -82,8 +79,8 @@
 :global(.swiper-button-next) {
   color: white;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 180px; /* absolute distance from top of the swiper */
+  transform: none;
   z-index: 10; /* Ensures buttons are on top */
 }
 
