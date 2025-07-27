@@ -1,5 +1,5 @@
 import Section from './Section';
-import styles from './About.module.css'; // Import the CSS for styling
+import styles from './About.module.css'; // Import the css for styling
 
 function About() {
   const aboutPoints = [
