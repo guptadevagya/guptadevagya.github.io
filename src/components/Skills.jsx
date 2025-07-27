@@ -72,11 +72,22 @@ function Skills() {
         <div className="row justify-content-center">
           {skillCategories.map((category) => (
             <div key={category.title} className="col-lg-5 col-md-6 mb-5">
-              <div className="nes-container is-dark with-title h-100 d-flex flex-column align-items-center">
-                <p className="title text-center" style={{ fontSize: '1.3rem' }}>
+              <div
+                className="nes-container is-dark with-title h-100 d-flex flex-column align-items-center"
+                style={{
+                  backgroundColor: 'hsl(212, 42%, 20%)',
+                }}
+              >
+                <p
+                  className="title text-center"
+                  style={{
+                    fontSize: '1.3rem',
+                    color: 'hsl(195, 75%, 52%)',
+                    backgroundColor: 'hsl(212, 42%, 20%)',
+                  }}
+                >
                   {category.title}
                 </p>
-
                 <ul
                   className="nes-list text-center"
                   style={{ listStyleType: 'none', padding: 0 }}

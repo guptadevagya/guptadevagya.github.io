@@ -40,7 +40,10 @@ function About() {
           />
         </div>
         <div className="col-md-6">
-          <div className="nes-container is-dark with-title h-80">
+          <div
+            className="nes-container is-dark with-title h-80"
+            style={{ backgroundColor: 'hsl(212, 42%, 20%)' }}
+          >
             <div className="text-white text-start">
               {aboutPoints.map((point) => (
                 <div key={point.id} className={styles.aboutItem}>
